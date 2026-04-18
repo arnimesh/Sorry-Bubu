@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Please aa jao na Bubu</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="page">
+    <article class="card" id="card">
+      <div class="illustration">
+        <img
+          id="characterImg"
+          class="character-img"
+          src="character.jpeg"
+          alt=""
+          width="220"
+          height="220"
+          data-fallback="images/character.jpeg"
+        />
+      </div>
+      <h1 class="question">
+        <span class="name" id="name">Bubu ki bcchi</span>,<br>
+        <span class="question-body">Dudu is calling you please aa jao na</span>
+        <span class="question-emoji" aria-hidden="true">🥺💕✨</span>
+      </h1>
+      <div class="dudu-row" aria-hidden="true">
+        <img class="dudu-img" src="images/dudu-crying.png" alt="" width="180" height="180" />
+        <img class="dudu-img" src="images/dudu-pleading.png" alt="" width="180" height="180" />
+      </div>
+      <div class="buttons">
+        <button type="button" class="btn btn-yes" id="btnYes">💖 thk hai aa rhi ✨</button>
+        <button type="button" class="btn btn-no" id="btnNo">😤 Nhi aaungi jao 💢</button>
+      </div>
+      <p class="hint" id="hint" aria-hidden="true">
+        <span class="hint-body">"No" to kr mt dena wrna pit jaogi mere haatho</span>
+        <span class="hint-emoji" aria-hidden="true">😈</span>
+      </p>
+    </article>
+
+    <article class="card card-success hidden" id="successCard">
+      <div class="success-content">
+        <img
+          id="successImg"
+          class="success-img"
+          src="success.jpeg"
+          alt=""
+          width="180"
+          height="180"
+          data-fallback="images/success.jpeg"
+        />
+        <h2>Yay! Now Dudu is happy yeppe</h2>
+        <p class="success-message">meri pyari cutie Bubu</p>
+      </div>
+    </article>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
